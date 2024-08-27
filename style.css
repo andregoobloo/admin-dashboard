@@ -2,3 +2,129 @@
   margin: 0px;
   padding: 0px;
 }
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: minmax(150px, 250px) repeat(3, 1fr);
+  width: auto;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: rgb(120, 147, 214);
+  grid-area: 1/1/5/2;
+  display: grid;
+  grid-template-rows: 300px 300px 150px;
+}
+
+.header {
+  grid-column: 2/3;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+}
+
+.main-content {
+  background-color: rgb(184, 184, 184);
+  display: grid;
+  grid-area: 2/2/5/3;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 40px 1fr;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  grid-column: 1/2;
+  padding-right: 20px;
+}
+
+.announcements {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1.2fr 80px 1fr;
+}
+
+.announcements,
+.projects {
+  margin-bottom: 4em;
+}
+
+.news {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.trending div,
+.news div {
+  border: 2px solid white;
+  background-color: rgb(236, 173, 173);
+}
+
+.trending-title {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+.projects-title {
+  font-size: 1.4rem;
+  grid-area: 1/1/2/2;
+  align-self: flex-end;
+}
+
+.announcements-title {
+  font-size: 1.2rem;
+  grid-area: 1/2/2/3;
+  align-self: flex-end;
+}
+
+.project {
+  background-color: white;
+  border-left: 16px solid orange;
+  border-radius: 8px;
+}
+
+.search {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search-bar {
+  background-color: bisque;
+  grid-column: 1/2;
+}
+
+.user-icons {
+  background-color: rgb(223, 132, 68);
+  grid-column: 2/3;
+}
+
+.user {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.welcome {
+  background-color: rgb(208, 227, 180);
+  grid-column: 1/2;
+}
+.user-btns {
+  background-color: rgb(213, 172, 226);
+  grid-column: 2/3;
+}
