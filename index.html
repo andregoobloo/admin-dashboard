@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -21,24 +26,66 @@
       </div>
       <div class="sidebar">
         <div class="logo">
-          <h1>Dashboard</h1>
+          <i class="material-icons" style="font-size: 50px">dashboard</i>
+          <h1 class="dashboard-title">Dashboard</h1>
         </div>
         <div class="home">
-          <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-          </ul>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">home</i>
+              <h3>Home</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">person</i>
+              <h3>Profile</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">chat_bubble</i>
+              <h3>Messages</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">history</i>
+              <h3>History</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">task</i>
+              <h3>Tasks</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">groups</i>
+              <h3>Communities</h3>
+            </div>
+          </a>
         </div>
         <div class="settings">
-          <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-          </ul>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">settings</i>
+              <h3>Settings</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">help_center</i>
+              <h3>Support</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="list">
+              <i class="material-icons">verified_user</i>
+              <h3>Privacy</h3>
+            </div>
+          </a>
         </div>
       </div>
       <div class="main-content">
