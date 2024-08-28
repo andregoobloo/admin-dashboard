@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,11 +7,12 @@
 
 body {
   box-sizing: border-box;
+  font-family: "Moderustic", sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: minmax(250px, 400px) minmax(80%, 4fr);
+  grid-template-columns: minmax(275px, 400px) minmax(80%, 4fr);
   grid-template-rows: minmax(150px, 200px) repeat(3, 1fr);
   width: auto;
   height: 100vh;
@@ -17,7 +20,7 @@ body {
 }
 
 .sidebar {
-  background-color: rgb(120, 147, 214);
+  background-color: #0ea5e9;
   grid-area: 1/1/5/2;
   display: grid;
   grid-template-rows: 100px 350px 150px;
@@ -59,7 +62,7 @@ body {
 .announcements {
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: 1.2fr 80px 1fr;
+  grid-template-rows: 1.5fr 80px 1fr;
 }
 
 .announcements,
@@ -76,6 +79,7 @@ body {
 .trending {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  background-color: white;
 }
 
 .trending-title {
@@ -141,7 +145,7 @@ a {
 }
 
 a:hover {
-  color: pink;
+  color: #fdba74;
 }
 
 .search-bar input {
@@ -172,15 +176,17 @@ a:hover {
 }
 
 .user-btns button {
-  background-color: rgb(180, 180, 252);
+  background-color: #0ea5e9;
   color: white;
   border-radius: 20px;
   height: 50px;
   max-width: 150px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .user-btns button:hover {
-  background-color: pink;
+  background-color: #fb923c;
 }
 
 .welcome-icon {
@@ -193,7 +199,7 @@ a:hover {
 
 .project {
   background-color: white;
-  border-left: 16px solid orange;
+  border-left: 16px solid #fb923c;
   border-radius: 8px;
   padding: 30px 2em 2em 1.5em;
   display: flex;
@@ -210,11 +216,13 @@ a:hover {
   margin-top: auto;
 }
 
-.project-inner-text-icons a {
+.project-inner-text-icons a,
+.user-icons a {
   color: black;
 }
-.project-inner-text-icons a:hover {
-  color: blue;
+.project-inner-text-icons a:hover,
+.user-icons a:hover {
+  color: #0ea5e9;
 }
 
 .project-inner-text-icons i {
@@ -226,4 +234,13 @@ a:hover {
   flex-direction: column;
   padding: 1em 1em 1em 1em;
   justify-content: center;
+}
+
+.welcome h3 {
+  font-size: 1.5rem;
+}
+
+.trending div {
+  align-self: center;
+  justify-self: center;
 }
