@@ -86,18 +86,21 @@ body {
   margin-top: 40px;
   font-size: 1.2rem;
   align-self: flex-end;
+  padding-bottom: 0.5em;
 }
 
 .projects-title {
   font-size: 1.4rem;
   grid-area: 1/1/2/2;
   align-self: flex-end;
+  padding-bottom: 0.5em;
 }
 
 .announcements-title {
   font-size: 1.2rem;
   grid-area: 1/2/2/3;
   align-self: flex-end;
+  padding-bottom: 0.5em;
 }
 
 .search {
@@ -217,11 +220,13 @@ a:hover {
 }
 
 .project-inner-text-icons a,
-.user-icons a {
+.user-icons a,
+.trending-list a {
   color: black;
 }
 .project-inner-text-icons a:hover,
-.user-icons a:hover {
+.user-icons a:hover,
+.trending-list a:hover {
   color: #0ea5e9;
 }
 
