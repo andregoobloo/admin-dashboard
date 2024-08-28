@@ -9,10 +9,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: minmax(150px, 250px) repeat(3, 1fr);
+  grid-template-columns: minmax(250px, 400px) minmax(80%, 4fr);
+  grid-template-rows: minmax(150px, 200px) repeat(3, 1fr);
   width: auto;
   height: 100vh;
+  background-color: rgba(206, 206, 206, 0.5);
 }
 
 .sidebar {
@@ -23,7 +24,6 @@ body {
   color: white;
   gap: 100px;
   padding-left: 20px;
-  max-width: 400px;
 }
 
 .header {
@@ -32,11 +32,12 @@ body {
   display: grid;
   padding-left: 2.5em;
   padding-right: 2.5em;
-  padding-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  background-color: white;
 }
 
 .main-content {
-  background-color: rgb(184, 184, 184);
   display: grid;
   grid-area: 2/2/5/3;
   grid-template-columns: 3fr 1fr;
@@ -98,12 +99,6 @@ body {
   font-size: 1.2rem;
   grid-area: 1/2/2/3;
   align-self: flex-end;
-}
-
-.project {
-  background-color: white;
-  border-left: 16px solid orange;
-  border-radius: 8px;
 }
 
 .search {
@@ -199,4 +194,34 @@ a:hover {
 
 .hello {
   margin-top: 30px;
+}
+
+.project {
+  background-color: white;
+  border-left: 16px solid orange;
+  border-radius: 8px;
+  padding: 30px 2em 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.project p {
+  padding-right: 2em;
+}
+
+.project-inner-text-icons {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.project-inner-text-icons a {
+  color: black;
+}
+.project-inner-text-icons a:hover {
+  color: blue;
+}
+
+.project-inner-text-icons i {
+  padding-left: 25px;
 }
